@@ -16,6 +16,7 @@ export default function ListingsTable({ listings }: ListingsTableProps) {
 
   useEffect(() => {
     loadMoreListings();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const loadMoreListings = () => {

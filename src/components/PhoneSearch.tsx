@@ -27,7 +27,7 @@ export default function PhoneSearch() {
     <section className="bg-gradient-to-r from-purple-600 to-purple-800 text-white py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Find Out Who's Calling</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Find Out Who&apos;s Calling</h1>
           <p className="text-xl opacity-90">Search millions of phone numbers to identify unknown callers</p>
         </div>
 

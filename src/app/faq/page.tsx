@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { Metadata } from 'next';
 
 interface FAQItem {
   question: string;
@@ -91,8 +90,8 @@ export default function FAQPage() {
         <div className="mt-12 p-6 bg-purple-50 rounded-lg">
           <h2 className="text-xl font-semibold mb-3">Still have questions?</h2>
           <p className="text-gray-700">
-            If you couldn't find the answer you're looking for, please don't hesitate to contact our support team. 
-            We're here to help!
+            If you couldn&apos;t find the answer you&apos;re looking for, please don&apos;t hesitate to contact our support team. 
+            We&apos;re here to help!
           </p>
         </div>
       </div>

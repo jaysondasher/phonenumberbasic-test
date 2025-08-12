@@ -24,7 +24,7 @@ export default function AboutPage() {
           <section>
             <h3 className="text-xl font-semibold mb-3">Our Mission</h3>
             <p className="text-gray-700 leading-relaxed">
-              We believe everyone deserves to know who's calling them. Our mission is to provide accurate, up-to-date 
+              We believe everyone deserves to know who&apos;s calling them. Our mission is to provide accurate, up-to-date 
               phone number information to help you make informed decisions about answering calls and protecting your privacy.
             </p>
           </section>
@@ -61,7 +61,7 @@ export default function AboutPage() {
           <section>
             <h3 className="text-xl font-semibold mb-3">Contact Us</h3>
             <p className="text-gray-700 leading-relaxed">
-              Have questions or feedback? We'd love to hear from you. Reach out to our support team for assistance 
+              Have questions or feedback? We&apos;d love to hear from you. Reach out to our support team for assistance 
               with any inquiries about our service.
             </p>
           </section>

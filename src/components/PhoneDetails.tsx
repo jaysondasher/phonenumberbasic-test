@@ -138,7 +138,7 @@ export default function PhoneDetails({ listing }: PhoneDetailsProps) {
                 onClick={() => setShowRegistrationModal(true)}
                 className="px-6 py-3 bg-yellow-500 text-white font-medium rounded-lg hover:bg-yellow-600 transition-colors"
               >
-                Register Now - It's Free
+                Register Now - It&apos;s Free
               </button>
             </div>
           )}
