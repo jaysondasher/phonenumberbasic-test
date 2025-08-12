@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - PhoneLookup Pro</title>
+    <meta name="description" content="Frequently asked questions about PhoneLookup Pro reverse phone lookup service.">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">📞 PhoneLookup Pro</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="faq.html" class="nav-link active">FAQ</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <div class="container">
+                <h1>Frequently Asked Questions</h1>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3 class="faq-question">How does reverse phone lookup work?</h3>
+                        <div class="faq-answer">
+                            <p>Reverse phone lookup searches our database of phone numbers to find associated information like the owner's name, address, and other contact details.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Is the service free?</h3>
+                        <div class="faq-answer">
+                            <p>Basic searches are free, but full information requires a free registration. There are no hidden fees or charges.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">How accurate is the information?</h3>
+                        <div class="faq-answer">
+                            <p>We strive for high accuracy by regularly updating our database from multiple reliable sources. However, information may occasionally be outdated.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Can I remove my information?</h3>
+                        <div class="faq-answer">
+                            <p>Yes, you can request removal of your information by contacting our support team. We respect privacy rights and will process removal requests promptly.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you support international numbers?</h3>
+                        <div class="faq-answer">
+                            <p>Currently, we focus on US phone numbers. International number support is planned for future updates.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Is my search history private?</h3>
+                        <div class="faq-answer">
+                            <p>Absolutely. We do not store or track your search history. All searches are completely private and confidential.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">How often is the database updated?</h3>
+                        <div class="faq-answer">
+                            <p>Our database is updated regularly with new information and corrections. We continuously improve data quality and coverage.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">What if I can't find a number?</h3>
+                        <div class="faq-answer">
+                            <p>If a number isn't in our database, we'll show similar numbers from the same area code. You can also report the number to help us expand our coverage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PhoneLookup Pro</h4>
+                    <p>Your trusted source for phone number information</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PhoneLookup Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // FAQ accordion functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                
+                question.addEventListener('click', () => {
+                    const isOpen = item.classList.contains('open');
+                    
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('open');
+                        otherItem.querySelector('.faq-answer').style.display = 'none';
+                    });
+                    
+                    // Toggle current item
+                    if (!isOpen) {
+                        item.classList.add('open');
+                        answer.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

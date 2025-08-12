@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{PHONE_NUMBER}} - Phone Number Lookup | PhoneLookup Pro</title>
+    <meta name="description" content="Get detailed information about {{PHONE_NUMBER}}. Find owner name, address, and more with our reverse phone lookup service.">
+    <meta name="keywords" content="{{PHONE_NUMBER}}, reverse phone lookup, phone number search, caller id">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/mobile.css">
+    <link rel="canonical" href="https://phonelookuppro.com/phone-number/{{PHONE_NUMBER}}.html">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "telephone": "{{PHONE_NUMBER}}",
+        "name": "{{FULL_NAME}}",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{STREET_ADDRESS}}",
+            "addressLocality": "{{CITY}}",
+            "addressRegion": "{{STATE}}",
+            "postalCode": "{{ZIP}}"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="../index.html">📞 PhoneLookup Pro</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../about.html" class="nav-link">About</a>
+                    <a href="../faq.html" class="nav-link">FAQ</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumb-container">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span class="breadcrumb-separator">›</span>
+                    <span class="breadcrumb-current">{{PHONE_NUMBER}}</span>
+                </nav>
+            </div>
+        </div>
+
+        <section class="phone-detail-section">
+            <div class="container">
+                <div class="phone-detail-header">
+                    <h1 class="phone-number-title">{{PHONE_NUMBER}}</h1>
+                    <div class="phone-status">
+                        <span class="status-badge active">Active Number</span>
+                    </div>
+                </div>
+
+                <div class="phone-detail-grid">
+                    <div class="main-info-card">
+                        <div class="info-header">
+                            <h2>Contact Information</h2>
+                            <div class="info-status">
+                                <span id="registration-status" class="registration-badge">
+                                    <!-- Populated by JavaScript -->
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-label">Full Name</div>
+                                <div class="info-value" id="contact-name">{{OBFUSCATED_NAME}}</div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-label">Email Address</div>
+                                <div class="info-value" id="contact-email">{{OBFUSCATED_EMAIL}}</div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-label">Business Name</div>
+                                <div class="info-value" id="contact-business">{{BUSINESS_NAME}}</div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-label">Address</div>
+                                <div class="info-value" id="contact-address">{{OBFUSCATED_ADDRESS}}</div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-label">Location</div>
+                                <div class="info-value">{{CITY}}, {{STATE}} {{ZIP}}</div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-label">Age</div>
+                                <div class="info-value" id="contact-age">{{OBFUSCATED_AGE}}</div>
+                            </div>
+                        </div>
+
+                        <div class="premium-info" id="premium-info" style="display: none;">
+                            <h3>Additional Information</h3>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <div class="info-label">Occupation</div>
+                                    <div class="info-value" id="contact-occupation">{{OCCUPATION}}</div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-label">Relatives</div>
+                                    <div class="info-value" id="contact-relatives">{{RELATIVES}}</div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-label">Previous Addresses</div>
+                                    <div class="info-value" id="contact-prev-addresses">{{PREVIOUS_ADDRESSES}}</div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-label">Social Profiles</div>
+                                    <div class="info-value" id="contact-social">{{SOCIAL_PROFILES}}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="registration-cta" id="registration-cta">
+                            <div class="cta-content">
+                                <h3>🔓 Unlock Full Information</h3>
+                                <p>Register for free to reveal complete contact details, address history, and associated information.</p>
+                                <button id="register-btn" class="register-btn">
+                                    Register to Reveal Full Info
+                                </button>
+                                <div class="cta-features">
+                                    <div class="feature">✓ Complete name and contact details</div>
+                                    <div class="feature">✓ Full address and location history</div>
+                                    <div class="feature">✓ Associated relatives and contacts</div>
+                                    <div class="feature">✓ Social media profiles</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar">
+                        <div class="sidebar-card">
+                            <h3>Report Information</h3>
+                            <p>Found incorrect information? Help us improve our database.</p>
+                            <button class="sidebar-btn">Report Issue</button>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3>Spam Protection</h3>
+                            <p>Mark this number as spam to help protect others.</p>
+                            <button class="sidebar-btn secondary">Report Spam</button>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3>Similar Numbers</h3>
+                            <div id="similar-numbers">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-searches">
+            <div class="container">
+                <h3>Related Phone Number Searches</h3>
+                <div class="related-grid" id="related-searches-grid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PhoneLookup Pro</h4>
+                    <p>Your trusted source for phone number information</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="../index.html">Home</a>
+                    <a href="../about.html">About</a>
+                    <a href="../faq.html">FAQ</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PhoneLookup Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div id="registration-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Quick Registration</h3>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Register for free to access complete phone number information and unlock premium features.</p>
+                <form id="registration-form" class="registration-form">
+                    <div class="form-group">
+                        <label for="reg-email">Email Address</label>
+                        <input type="email" id="reg-email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-name">Full Name</label>
+                        <input type="text" id="reg-name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="reg-terms" required>
+                            I agree to the <a href="#terms">Terms of Service</a> and <a href="#privacy">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="register-submit-btn">Complete Registration</button>
+                </form>
+                <div class="registration-benefits">
+                    <h4>What you'll get:</h4>
+                    <ul>
+                        <li>✓ Unlimited phone number searches</li>
+                        <li>✓ Complete contact information</li>
+                        <li>✓ Address and location history</li>
+                        <li>✓ Associated relatives and contacts</li>
+                        <li>✓ Priority customer support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/obfuscation.js"></script>
+    <script>
+        // Phone detail page specific JavaScript
+        class PhoneDetailPage {
+            constructor() {
+                this.phoneNumber = "{{PHONE_NUMBER}}";
+                this.listing = {{LISTING_DATA}};
+                this.initializePage();
+                this.bindEvents();
+            }
+
+            initializePage() {
+                this.updateRegistrationStatus();
+                this.loadSimilarNumbers();
+                this.loadRelatedSearches();
+            }
+
+            bindEvents() {
+                const registerBtn = document.getElementById('register-btn');
+                const modal = document.getElementById('registration-modal');
+                const closeBtn = document.getElementById('modal-close');
+                const regForm = document.getElementById('registration-form');
+
+                if (registerBtn) {
+                    registerBtn.addEventListener('click', () => {
+                        if (DataObfuscator.isUserRegistered()) {
+                            this.revealInformation();
+                        } else {
+                            modal.style.display = 'block';
+                        }
+                    });
+                }
+
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', () => {
+                        modal.style.display = 'none';
+                    });
+                }
+
+                if (modal) {
+                    modal.addEventListener('click', (e) => {
+                        if (e.target === modal) {
+                            modal.style.display = 'none';
+                        }
+                    });
+                }
+
+                if (regForm) {
+                    regForm.addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        this.completeRegistration();
+                    });
+                }
+            }
+
+            updateRegistrationStatus() {
+                const isRegistered = DataObfuscator.isUserRegistered();
+                const statusBadge = document.getElementById('registration-status');
+                const ctaSection = document.getElementById('registration-cta');
+                const premiumInfo = document.getElementById('premium-info');
+
+                if (isRegistered) {
+                    if (statusBadge) statusBadge.innerHTML = '<span class="registered">✓ Registered User</span>';
+                    if (ctaSection) ctaSection.style.display = 'none';
+                    if (premiumInfo) premiumInfo.style.display = 'block';
+                    this.revealInformation();
+                } else {
+                    if (statusBadge) statusBadge.innerHTML = '<span class="unregistered">Guest User</span>';
+                    if (ctaSection) ctaSection.style.display = 'block';
+                    if (premiumInfo) premiumInfo.style.display = 'none';
+                }
+            }
+
+            completeRegistration() {
+                DataObfuscator.registerUser();
+                document.getElementById('registration-modal').style.display = 'none';
+                this.updateRegistrationStatus();
+                
+                // Show success message
+                this.showSuccessMessage('Registration successful! Full information is now revealed.');
+            }
+
+            revealInformation() {
+                if (!this.listing) return;
+
+                const displayData = DataObfuscator.getDisplayData(this.listing);
+                
+                // Update all info fields with full data
+                const nameEl = document.getElementById('contact-name');
+                const emailEl = document.getElementById('contact-email');
+                const addressEl = document.getElementById('contact-address');
+                const ageEl = document.getElementById('contact-age');
+                const occupationEl = document.getElementById('contact-occupation');
+                const relativesEl = document.getElementById('contact-relatives');
+                const prevAddressesEl = document.getElementById('contact-prev-addresses');
+                const socialEl = document.getElementById('contact-social');
+
+                if (nameEl) nameEl.textContent = displayData.name;
+                if (emailEl) emailEl.textContent = displayData.email;
+                if (addressEl) addressEl.textContent = displayData.address;
+                if (ageEl) ageEl.textContent = displayData.age;
+                if (occupationEl) occupationEl.textContent = displayData.occupation || 'Not available';
+                if (relativesEl) relativesEl.textContent = displayData.relatives || 'Not available';
+                if (prevAddressesEl) prevAddressesEl.textContent = displayData.previousAddresses || 'Not available';
+                if (socialEl) {
+                    if (displayData.socialProfiles) {
+                        socialEl.innerHTML = displayData.socialProfiles.split(';').map(profile => 
+                            `<a href="https://${profile.trim()}" target="_blank" rel="noopener">${profile.trim()}</a>`
+                        ).join('<br>');
+                    } else {
+                        socialEl.textContent = 'Not available';
+                    }
+                }
+            }
+
+            loadSimilarNumbers() {
+                const container = document.getElementById('similar-numbers');
+                if (!container) return;
+
+                const areaCode = this.phoneNumber.substring(0, 3);
+                const similar = getPhoneListings()
+                    .filter(listing => 
+                        listing.phone.substring(0, 3) === areaCode && 
+                        listing.phone !== this.phoneNumber
+                    )
+                    .slice(0, 5);
+
+                container.innerHTML = similar.map(listing => {
+                    const displayData = DataObfuscator.getDisplayData(listing);
+                    return `
+                        <div class="similar-number">
+                            <a href="${listing.phone}.html">${listing.phone}</a>
+                            <div class="similar-name">${displayData.name}</div>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            loadRelatedSearches() {
+                const container = document.getElementById('related-searches-grid');
+                if (!container) return;
+
+                const allListings = getPhoneListings();
+                const random = allListings
+                    .filter(listing => listing.phone !== this.phoneNumber)
+                    .sort(() => 0.5 - Math.random())
+                    .slice(0, 8);
+
+                container.innerHTML = random.map(listing => {
+                    const displayData = DataObfuscator.getDisplayData(listing);
+                    return `
+                        <div class="related-item">
+                            <a href="${listing.phone}.html" class="related-link">
+                                <div class="related-phone">${listing.phone}</div>
+                                <div class="related-name">${displayData.name}</div>
+                                <div class="related-location">${displayData.city}, ${displayData.state}</div>
+                            </a>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            showSuccessMessage(message) {
+                const successDiv = document.createElement('div');
+                successDiv.className = 'success-message';
+                successDiv.textContent = message;
+                successDiv.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: #4CAF50;
+                    color: white;
+                    padding: 15px 25px;
+                    border-radius: 5px;
+                    z-index: 1000;
+                    animation: slideIn 0.3s ease;
+                `;
+
+                document.body.appendChild(successDiv);
+
+                setTimeout(() => {
+                    successDiv.remove();
+                }, 3000);
+            }
+        }
+
+        // Initialize page when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new PhoneDetailPage();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneLookup Pro - Free Reverse Phone Number Search</title>
+    <meta name="description" content="Find who's calling with our free reverse phone number lookup. Search millions of phone numbers to identify unknown callers.">
+    <meta name="keywords" content="reverse phone lookup, phone number search, caller id, who called me">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>📞 PhoneLookup Pro</h1>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h2>Find Out Who's Calling</h2>
+                <p class="hero-subtitle">Search millions of phone numbers to identify unknown callers</p>
+                
+                <div class="search-container">
+                    <form id="phone-search-form" class="search-form">
+                        <div class="search-input-container">
+                            <input 
+                                type="tel" 
+                                id="phone-input" 
+                                class="search-input"
+                                placeholder="Enter phone number (e.g., 555-123-4567)"
+                                maxlength="14"
+                                required
+                            >
+                            <button type="submit" class="search-btn">
+                                🔍 Search
+                            </button>
+                        </div>
+                        <div class="search-hint">
+                            Enter any US phone number format: (555) 123-4567, 555-123-4567, or 5551234567
+                        </div>
+                    </form>
+                </div>
+
+                <div id="search-results" class="search-results" style="display: none;">
+                    <div id="no-results" class="no-results" style="display: none;">
+                        <h3>No Record Found</h3>
+                        <p>We couldn't find any information for that phone number.</p>
+                        <div id="similar-results"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-listings">
+            <div class="container">
+                <h3>Latest Phone Number Listings</h3>
+                <p class="section-subtitle">Recent additions to our database</p>
+                
+                <div class="listings-table-container">
+                    <table class="listings-table">
+                        <thead>
+                            <tr>
+                                <th>Phone Number</th>
+                                <th>Name</th>
+                                <th>Business</th>
+                                <th>Location</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="latest-listings-body">
+                            <!-- Will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="load-more-container">
+                    <button id="load-more-btn" class="load-more-btn">Load More Listings</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h3>Why Choose PhoneLookup Pro?</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h4>Comprehensive Database</h4>
+                        <p>Search millions of phone numbers from our extensive database</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Instant Results</h4>
+                        <p>Get phone number information in seconds</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h4>Privacy Protected</h4>
+                        <p>Your searches are private and secure</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h4>Mobile Friendly</h4>
+                        <p>Search from any device, anywhere</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PhoneLookup Pro</h4>
+                    <p>Your trusted source for phone number information</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PhoneLookup Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/obfuscation.js"></script>
+    <script src="assets/js/search.js"></script>
+</body>
+</html>
